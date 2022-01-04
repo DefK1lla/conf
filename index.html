@@ -1,0 +1,1203 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- SVG -->
+    <svg display="none">
+        <symbol id="mail" viewBox="0 0 24 20">
+            <g>
+                <path
+                    d="M21.6 0H2.4C1.08 0 0.012 1.08 0.012 2.4L0 16.8C0 18.12 1.08 19.2 2.4 19.2H21.6C22.92 19.2 24 18.12 24 16.8V2.4C24 1.08 22.92 0 21.6 0ZM21.6 4.8L12 10.8L2.4 4.8V2.4L12 8.4L21.6 2.4V4.8Z" />
+            </g>
+        </symbol>
+
+        <symbol id="phone" viewBox="0 0 22 22">
+            <g>
+                <path
+                    d="M20.79 15.1311C19.2867 15.1311 17.8322 14.8867 16.4756 14.4467C16.263 14.3746 16.0345 14.3639 15.8161 14.4158C15.5978 14.4677 15.3985 14.58 15.2411 14.74L13.3222 17.1478C9.86333 15.4978 6.62444 12.3811 4.90111 8.8L7.28444 6.77111C7.61444 6.42889 7.71222 5.95222 7.57778 5.52444C7.12556 4.16778 6.89333 2.71333 6.89333 1.21C6.89333 0.55 6.34333 0 5.68333 0H1.45444C0.794445 0 0 0.293333 0 1.21C0 12.5644 9.44778 22 20.79 22C21.6578 22 22 21.23 22 20.5578V16.3411C22 15.6811 21.45 15.1311 20.79 15.1311Z" />
+            </g>
+        </symbol>
+
+        <symbol id="arrow" viewBox="0 0 31 61">
+            <g>
+                <path d="M0.234863 0.344727L30.2257 30.1185L0.451997 60.1094L10.909 28.7907L0.234863 0.344727Z" />
+            </g>
+        </symbol>
+
+        <symbol id="tg" viewBox="0 0 30 31">
+            <g>
+                <path
+                    d="M15 0.379883C6.72 0.379883 0 7.09988 0 15.3799C0 23.6599 6.72 30.3799 15 30.3799C23.28 30.3799 30 23.6599 30 15.3799C30 7.09988 23.28 0.379883 15 0.379883ZM21.96 10.5799C21.735 12.9499 20.76 18.7099 20.265 21.3649C20.055 22.4899 19.635 22.8649 19.245 22.9099C18.375 22.9849 17.715 22.3399 16.875 21.7849C15.555 20.9149 14.805 20.3749 13.53 19.5349C12.045 18.5599 13.005 18.0199 13.86 17.1499C14.085 16.9249 17.925 13.4299 18 13.1149C18.0104 13.0672 18.009 13.0176 17.996 12.9706C17.9829 12.9235 17.9585 12.8804 17.925 12.8449C17.835 12.7699 17.715 12.7999 17.61 12.8149C17.475 12.8449 15.375 14.2399 11.28 16.9999C10.68 17.4049 10.14 17.6149 9.66 17.5999C9.12 17.5849 8.1 17.2999 7.335 17.0449C6.39 16.7449 5.655 16.5799 5.715 16.0549C5.745 15.7849 6.12 15.5149 6.825 15.2299C11.205 13.3249 14.115 12.0649 15.57 11.4649C19.74 9.72488 20.595 9.42488 21.165 9.42488C21.285 9.42488 21.57 9.45488 21.75 9.60488C21.9 9.72488 21.945 9.88988 21.96 10.0099C21.945 10.0999 21.975 10.3699 21.96 10.5799Z" />
+            </g>
+        </symbol>
+
+        <symbol id="youtube" viewBox="0 0 30 31">
+            <g>
+                <path
+                    d="M17.5047 15.1189L13.9953 13.4814C13.6891 13.3393 13.4375 13.4986 13.4375 13.8377V16.9221C13.4375 17.2611 13.6891 17.4205 13.9953 17.2783L17.5031 15.6408C17.8109 15.4971 17.8109 15.2627 17.5047 15.1189ZM15 0.379883C6.71562 0.379883 0 7.09551 0 15.3799C0 23.6643 6.71562 30.3799 15 30.3799C23.2844 30.3799 30 23.6643 30 15.3799C30 7.09551 23.2844 0.379883 15 0.379883ZM15 21.4736C7.32187 21.4736 7.1875 20.7814 7.1875 15.3799C7.1875 9.97832 7.32187 9.28613 15 9.28613C22.6781 9.28613 22.8125 9.97832 22.8125 15.3799C22.8125 20.7814 22.6781 21.4736 15 21.4736Z" />
+            </g>
+        </symbol>
+
+        <symbol id="vk" viewBox="0 0 30 31">
+            <g>
+                <path
+                    d="M15 0.379883C6.71562 0.379883 0 7.09551 0 15.3799C0 23.6643 6.71562 30.3799 15 30.3799C23.2844 30.3799 30 23.6643 30 15.3799C30 7.09551 23.2844 0.379883 15 0.379883ZM20.7687 17.3033C20.7687 17.3033 22.0953 18.6127 22.4219 19.2205C22.4312 19.233 22.4359 19.2455 22.4391 19.2518C22.5719 19.4752 22.6031 19.6486 22.5375 19.7783C22.4281 19.9939 22.0531 20.1002 21.925 20.1096H19.5812C19.4187 20.1096 19.0781 20.0674 18.6656 19.783C18.3484 19.5611 18.0359 19.1971 17.7312 18.8424C17.2766 18.3143 16.8828 17.858 16.4859 17.858C16.4355 17.8579 16.3854 17.8658 16.3375 17.8814C16.0375 17.9783 15.6531 18.4064 15.6531 19.5471C15.6531 19.9033 15.3719 20.108 15.1734 20.108H14.1C13.7344 20.108 11.8297 19.9799 10.1422 18.2002C8.07656 16.0205 6.21719 11.6486 6.20156 11.608C6.08437 11.3252 6.32656 11.1736 6.59062 11.1736H8.95781C9.27344 11.1736 9.37656 11.3658 9.44844 11.5361C9.53281 11.7346 9.84219 12.5236 10.35 13.4111C11.1734 14.858 11.6781 15.4455 12.0828 15.4455C12.1587 15.4446 12.2332 15.4253 12.3 15.3893C12.8281 15.0955 12.7297 13.2127 12.7062 12.8221C12.7062 12.7486 12.7047 11.9799 12.4344 11.6111C12.2406 11.3439 11.9109 11.2424 11.7109 11.2049C11.7919 11.0932 11.8985 11.0026 12.0219 10.9408C12.3844 10.7596 13.0375 10.733 13.6859 10.733H14.0469C14.75 10.7424 14.9313 10.7877 15.1859 10.8518C15.7016 10.9752 15.7125 11.308 15.6672 12.4471C15.6531 12.7705 15.6391 13.1361 15.6391 13.5674C15.6391 13.6611 15.6344 13.7611 15.6344 13.8674C15.6187 14.4471 15.6 15.1049 16.0094 15.3752C16.0628 15.4087 16.1245 15.4265 16.1875 15.4268C16.3297 15.4268 16.7578 15.4268 17.9172 13.4377C18.2747 12.7975 18.5855 12.1322 18.8469 11.4471C18.8703 11.4064 18.9391 11.2814 19.0203 11.233C19.0803 11.2024 19.1468 11.1869 19.2141 11.1877H21.9969C22.3 11.1877 22.5078 11.233 22.5469 11.3502C22.6156 11.5361 22.5344 12.1033 21.2641 13.8236L20.6969 14.5721C19.5453 16.0814 19.5453 16.158 20.7687 17.3033Z" />
+            </g>
+        </symbol>
+
+        <symbol id="dzen" viewBox="0 0 30 31">
+            <g>
+                <circle cx="15" cy="15.3799" r="15" />
+                <path
+                    d="M0 15.3799L5.75194 14.495C10.0661 13.8312 13.4514 10.446 14.1151 6.13183L15 0.379883L15.8849 6.13183C16.5486 10.446 19.9339 13.8312 24.2481 14.495L30 15.3799L23.516 16.8762C19.5723 17.7863 16.566 20.9838 15.9006 24.9761L15 30.3798L14.0994 24.9761C13.434 20.9838 10.4277 17.7863 6.48404 16.8762L0 15.3799Z"
+                    fill="white" />
+            </g>
+        </symbol>
+    </svg>
+
+
+
+
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__top">
+                <div class="container">
+                    <div class="header__contacts">
+                        <a class="header__phone" href="tel:88005503731">
+                            <svg class="header__icon">
+                                <use xlink:href="#phone"></use>
+                            </svg>
+
+                            <span>8-800-550-37-31</span>
+                        </a>
+                        <a class="header__email" href="mailto:info@propb.ru">
+                            <svg class="header__icon">
+                                <use xlink:href="#mail"></use>
+                            </svg>
+
+                            <span>info@propb.ru</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="header__content lock-padding">
+                <div class="container">
+                    <div class="header__inner">
+                        <div class="header__info">
+                            <a class="header__logo" href="#">
+                                <img src="img/logo.svg" alt="logo propb">
+                            </a>
+
+                            <div class="header__text">
+                                <span>Портал</span>
+                                про пожарную безопасность
+                            </div>
+                        </div>
+
+
+
+
+                        <nav class="menu">
+                            <div class="menu__btn">
+                                <span class="menu__btn-line">menu</span>
+                            </div>
+
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a class="menu__link anchor" href="#about">О КОНФЕРЕНЦИИ</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link anchor" href="#speakers">СПИКЕРЫ</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link anchor" href="#program">ПРОГРАММА
+                                    </a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link anchor" href="#partners">ПАРТНЕРЫ</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a class="menu__link anchor" href="#spec-offers">СПЕЦПРЕДЛОЖЕНИЯ
+                                    </a>
+                                </li>
+
+                                <li class="menu__item">
+                                    <button class="menu__list-btn btn-sm popup-link"
+                                        data-popup="#registration-popup">РЕГИСТРАЦИЯ</button>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header__btn btn-sm popup-link"
+                            data-popup="#registration-popup">РЕГИСТРАЦИЯ</button>
+                    </div>
+                </div> <!-- /.container -->
+            </div>
+        </header>
+
+        <main class="main">
+            <!-- Intro -->
+            <section class="intro">
+                <div class="container-lg">
+                    <div class="intro__inner">
+                        <div class="intro__content" data-aos="fade-up">
+                            <h1 class="intro__title page-title">
+                                ОНЛАЙН-КОНФЕРЕНЦИЯ
+                            </h1>
+
+                            <div class="intro__subtitle">
+                                ОТ ВЕДУЩЕГО В РОССИИ <br>
+                                ИНТЕРНЕТ-ПОРТАЛА <br>
+                                О ПОЖАРНОЙ БЕЗОПАСНОCТИ
+                            </div>
+
+                            <a class="intro__link" href="#">PROPB.RU</a>
+
+                            <div class="intro__btns">
+                                <button class="intro__btn btn popup-link"
+                                    data-popup="#registration-popup">РЕГИСТРАЦИЯ</button>
+                                <a class="intro__btn btn" href="#">ПОДРОБНЕЕ</a>
+                            </div>
+                        </div>
+
+                        <div class="intro__anim" data-aos="fade-up">
+                            <div class="intro__date">
+                                22-23 ДЕКАБРЯ <br>
+                                2021
+                            </div>
+
+                            <img class="intro__anim-img" src="img/intro/anim.svg" alt="animation">
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.intro -->
+
+            <!-- Info -->
+            <div class="info" data-aos="fade-up">
+                <div class="container-lg">
+                    <div class="info__items">
+                        <div class="info__item">
+                            2 <br>
+                            ДНЯ
+                        </div>
+
+                        <div class="info__item">
+                            8 <br>
+                            СПИКЕРОВ
+                        </div>
+
+                        <div class="info__item">
+                            400 МИН <br>
+                            ЖИВОГО ОБЩЕНИЯ
+                        </div>
+
+                        <div class="info__item">
+                            1000+ <br>
+                            УЧАСТНИКОВ
+                        </div>
+
+                        <div class="info__item">
+                            БЕСПЛАТНОЕ <br>
+                            УЧАСТИЕ
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </div> <!-- /.info -->
+
+            <!-- About -->
+            <section class="about" id="about">
+                <div class="container">
+                    <div class="about__inner" data-aos="fade-up">
+                        <h2 class="about__title title">
+                            КОРОТКО О ГЛАВНОМ
+                        </h2>
+
+                        <div class="about__text">
+                            Расскажем о последних изменениях и нововведениях в области пожарной безопасности в 2021
+                            году. Поговорим только о самом интересном. Обсудим «наболевшие» вопросы.
+                        </div>
+
+                        <div class="about__items">
+                            <div class="about__item">
+                                Мы тщательно отбираем выступающих экспертов, которые дают полезную и применимую «здесь и
+                                сейчас» информацию.
+                            </div>
+
+                            <div class="about__item">
+                                На каждом мероприятии организуем спецпредложения
+                                для всех участников от партнеров
+                                портала PRO PB
+                            </div>
+
+                            <div class="about__item">
+                                Количество подобных мероприятий ежегодно растет, и мы также видим здесь заслугу портала
+                                PRO PB,
+                                где аккумулируются все знания
+                                рынка пожарной безопасности
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.about -->
+
+            <!-- Topics -->
+            <section class="topics">
+                <div class="container">
+                    <h2 class="topics__title title" data-aos="fade-up">КЛЮЧЕВЫЕ ТЕМЫ КОНФЕРЕНЦИИ</h2>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="topics__marquee" data-aos="fade-up">
+                        <p class="topics__text">
+                            <span>ПОЖАРНЫЕ РИСКИ</span> <span>ЭКСПЕРТИЗА</span> <span>СПЕЦТЕХУСЛОВИЯ</span>
+                            <span>ПОЖАРНЫЙ
+                                БИЗНЕС</span>
+                            <span>ПОЖАРНЫЕ РИСКИ</span>
+                        </p>
+
+                        <p class="topics__text topics__text--slower">
+                            <span>НЕЗАВИСИМАЯ ОЦЕНКА</span> <span>ПОЖАРНЫЙ НАДЗОР</span> <span>ОБУЧЕНИЕ</span>
+                            <span>ЛИЦЕНЗИРОВАНИЕ</span> <span>НЕЗАВИСИМАЯ ОЦЕНКА</span>
+
+                        </p>
+
+                        <p class="topics__text topics__text--slowest">
+                            <span>ПРОЕКТИРОВНИЕ СПС И СОУЭ</span> <span>ПРОГРАММНОЕ ОБЕСПЕЧЕНИЕ</span> <span>ОБЕСПЕЧЕНИЕ
+                                ЗАЩИТЫ</span> <span>ПРОЕКТИРОВНИЕ СПС И СОУЭ</span>
+                        </p>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.topics -->
+
+            <!-- Features -->
+            <section class="features">
+                <div class="container">
+                    <div class="features__inner">
+                        <h2 class="features__title title">ФИШКИ КОНФЕРЕНЦИИ</h2>
+
+                        <div class="features__items">
+                            <div class="features__item features__item--right" data-aos="fade-up">
+                                <h5 class="features__subtitle">НЕТВОРКИНГ</h5>
+
+                                <p class="features__text">
+                                    Сможете в онлайн-формате пообщаться
+                                    с выбранными спикерами и с другими участниками: обсудить тему, задать
+                                    свои вопросы и сразу же получить ответ.
+                                </p>
+                            </div>
+
+                            <div class="features__item features__item--left" data-aos="fade-up">
+                                <h5 class="features__subtitle">НОВЫЕ ТЕМЫ
+                                </h5>
+
+                                <p class="features__text">
+                                    Открываем новые темы! С вами будут общаться известные спикеры, которые всегда
+                                    привлекают к себе внимание. Они готовые поделиться своими знаниями и опытом
+                                    абсолютно бесплатно
+                                </p>
+                            </div>
+
+                            <div class="features__item features__item--right" data-aos="fade-up">
+                                <h5 class="features__subtitle">ОПЫТ НАУЧНОГО СООБЩЕСТВА
+                                </h5>
+
+                                <p class="features__text">
+                                    Мы не хотим замыкаться только на своем опыте, ведь наша задача смотреть шире!
+                                    Пригласили представителей ВУЗов, Главгосэкспертизы и пожарных
+                                    лабораторий МЧС!
+                                </p>
+                            </div>
+
+                            <div class="features__item features__item--left" data-aos="fade-up">
+                                <h5 class="features__subtitle">СООБЩЕСТВО ЕДИНОМЫШЛЕННИКОВ
+                                </h5>
+
+                                <p class="features__text">
+                                    Всех участников конференции приглашаем в наш Telegram-чат, в котором все говорят с
+                                    тобой на одном языке и которым не нужно объяснять,
+                                    что такое «ЛВЖ», «СОУЭ» или «ППР»
+                                </p>
+
+                                <a class="features__btn btn-sm" href="#">ПЕРЕЙТИ</a>
+                            </div>
+
+                            <div class="features__item features__item--right" data-aos="fade-up">
+                                <h5 class="features__subtitle">ПОДАРКИ ОТ ПАРТНЕРОВ
+                                </h5>
+
+                                <p class="features__text">
+                                    Партнеры мероприятия приготовили для всех зарегистрированных участников подарки
+                                    в виде скидок на обучение и программное обеспечение в сфере пожарной безопасности
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.features -->
+
+            <!-- Interest -->
+            <section class="interest">
+                <div class="container">
+                    <h2 class="interest__title title" data-aos="fade-up">КОМУ ТОЧНО БУДЕТ ИНТЕРЕСНО</h2>
+                </div>
+
+                <div class="container-lg">
+                    <div class="interest__items" data-aos="fade-up">
+                        <div class="interest__item">
+                            <h6 class="interest__subtitle">
+                                Специалистам (экспертам), выполняющим расчеты пожарных рисков
+                            </h6>
+
+                            <p class="interest__text">
+                                Расскажем о конкурентных преимуществах программного обеспечения по пожарным рискам на
+                                отечественном рынке.
+                                Получите ответы на проблемные вопросы при проектировании
+                                и экспертизе
+
+                            </p>
+                        </div>
+
+                        <div class="interest__item">
+                            <h6 class="interest__subtitle">
+                                Для сотрудников пожарных лабораторий, инспекторов ГПН
+                            </h6>
+
+                            <p class="interest__text">
+                                Вы получаете новые знания
+                                и успешный опыт ваших коллег-экспертов. Рассмотрим новые требования к оформлению отчетов
+                                по результатам расчетов по оценке пожарных рисков
+                            </p>
+                        </div>
+
+                        <div class="interest__item">
+                            <h6 class="interest__subtitle">
+                                Всем, кто собирается открывать свой бизнес
+                                по пожарной безопасности
+                            </h6>
+
+                            <p class="interest__text">
+                                Узнаете о «подводных камнях» при получении лицензий МЧС, получите советы о том, как не
+                                прогореть в начале предпринимательского пути,
+                                какие нужны документы
+                                и сколько нужно денег
+                                для открытия своего бизнеса?
+                            </p>
+                        </div>
+
+                        <div class="interest__item">
+                            <h6 class="interest__subtitle">
+                                Преподавателям ВУЗов и научным сотрудникам
+                            </h6>
+
+                            <p class="interest__text">
+                                Беседуем с коллегами из ведущих учебных заведений
+                                о том, как успешно готовить новые кадры в отрасли
+                                и как найти достойную работу молодым выпускникам
+
+                            </p>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.interest -->
+
+            <!-- Speakers -->
+            <section class="speakers" id="speakers">
+                <div class="container">
+                    <div class="speakers__inner">
+                        <h2 class="speakers__title title" data-aos="fade-up">Спикеры</h2>
+
+                        <p class="speakers__text" data-aos="fade-up">
+                            Только спикеры-практики, которые не понаслышке знают о пожарной безопасности
+                            и профилактике! Честно расскажут о своих планах и щедро поделятся знаниями
+                            по пожарной безопасности. Некоторые из них – люди публичные, и часто выступают
+                            на семинарах и конференциях. Некоторых из них вы не знаете в лицо, потому что они
+                            целыми днями заняты своим делом.
+                        </p>
+
+                        <div class="speakers__items">
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/1.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        КИРИК ЕКАТЕРИНА
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        кандидат физико-математических наук; старший научный сотрудник Института
+                                        вычислительного моделирования СО РАН...
+                                    </p>
+
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/2.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        КОСТЕРИН ИГОРЬ
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        главный специалист Отдела экспертизы пожарной безопасности...
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/3.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        КНЯЗЕВ ПАВЕЛ
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Инженер пожарной безопасности.
+                                        С 2019 года занимается частной практикой в области пожарной безопасности...
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/4.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        МАКЛАШОВ ВЛАДИМИР
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Эксперт-аудитор пожарной безопасности; Судебный эксперт; Эксперт по оценке
+                                        соответствия объектов защиты...
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/2.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        ЛАПШИН СЕРГЕЙ
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        старший преподаватель кафедры государственного надзора и экспертизы пожаров...
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/2.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        НЕГОДУЙКО ВИТАЛИЙ
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Начальник ФГБУ «СЭУ ФПС «Испытательная пожарная лаборатория»...
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <a class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</a>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/7.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        ЯСНЕВА АНЖЕЛИКА
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Юрисконсульт Центра Лицензирования «Статус», который успешно работает на рынке
+                                        услуг
+                                        в области лицензирования...
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/2.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        ИВАНОВ АНДРЕЙ
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Кто-то
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/9.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        КАПЛАН ЯНА
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Начальник Кафедры надзорной деятельности и права (в составе УНК УКБ) Уральского
+                                        института ГПС МЧС России...
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+
+                            <div class="speakers__item" data-aos="fade-up">
+                                <img class="speakers__img" src="img/speakers/2.jpg" alt="speaker photo">
+
+                                <div class="speakers__item-body">
+                                    <div class="speakers__name">
+                                        БАСКАКОВ СЕРГЕЙ
+                                    </div>
+
+                                    <p class="speakers__item-text">
+                                        Юрисконсульт Учебного центра "Академия Безопасности", специализирующегося на
+                                        онлайн-обучении в сфере безопасности.
+
+                                    </p>
+
+                                    <a class="speakers__link popup-link" href="#" data-popup="#speaker-popup">
+                                        <span>ПОДРОБНЕЕ</span>
+                                        <svg class="speakers__icon">
+                                            <use xlink:href="#arrow"></use>
+                                        </svg>
+                                    </a>
+
+                                    <button class="speakers__btn btn-sm popup-link" data-popup="#question-popup">ЗАДАТЬ
+                                        ВОПРОС</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <button class="speakers__registration popup-link" data-popup="#registration-popup"
+                            data-aos="fade-up">регистрация</button>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.speakers -->
+
+            <!-- Program -->
+            <section class="program" id="program">
+                <div class="container">
+                    <div class="program__inner">
+                        <h2 class="program__title title" data-aos="fade-up">ПРОГРАММА КОНФЕРЕНЦИИ</h2>
+
+                        <div class="program__date" data-aos="fade-up">
+                            22 ДЕКАБРЯ, СРЕДА
+                        </div>
+
+                        <div class="program__opening" data-aos="fade-up">
+                            Открытие конференции <br>
+                            (время по мск):
+                        </div>
+
+                        <div class="program__items">
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">11:00-11:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Кирик Екатерина</div>
+                                    <div class="program__city">г. Красноярск</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">12:00-12:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Негодуйко Виталий</div>
+                                    <div class="program__city">г. Ханты-Мансийск</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">13:00-13:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Князев Павел</div>
+                                    <div class="program__city">г. Москва</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">14:00-14:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Яснева Анжелика</div>
+                                    <div class="program__city">г. Иваново</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">15:00-15:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Иванов Андрей</div>
+                                    <div class="program__city">г. Нижний Новгород</div>
+                                </div>
+                            </div>
+                        </div> <!-- /.program__items -->
+
+                        <div class="program__date" data-aos="fade-up">
+                            23 ДЕКАБРЯ, ЧЕТВЕРГ
+                        </div>
+
+                        <div class="program__opening" data-aos="fade-up">
+                            Открытие конференции <br>
+                            (время по мск):
+                        </div>
+
+                        <div class="program__items">
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">11:00-11:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Маклашов Владимир</div>
+                                    <div class="program__city">г. Оренбург</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">12:00-12:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Каплан Яна</div>
+                                    <div class="program__city">г. Екатеринбург</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">13:00-13:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Костерин Игорь</div>
+                                    <div class="program__city">г. Москва</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">14:00-14:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Лапшин Сергей</div>
+                                    <div class="program__city">г. Иваново</div>
+                                </div>
+                            </div>
+
+                            <div class="program__item">
+                                <div class="program__info" data-aos="fade-up">
+                                    <div class="program__time">15:00-15:40</div>
+                                    <div class="program__theme">ТЕМА</div>
+                                </div>
+
+                                <div class="program__speaker" data-aos="fade-up">
+                                    <div class="program__speaker-name">Бескаков Сергей</div>
+                                    <div class="program__city">г. Иваново</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.program -->
+
+            <!-- Pratners -->
+            <section class="partners" id="partners">
+                <div class="container">
+                    <div class="partners__inner" data-aos="fade-up">
+                        <h2 class="partners__title title">
+                            Партрнеры
+                        </h2>
+
+                        <div class="parnters__items">
+                            <div class="partners__item">
+                                <img class="partners__img" src="img/partners/1.png" alt="partner">
+
+                                <div class="partners__name">ЧОУ ДПО «УЦ «Академия Безопасности»</div>
+                            </div>
+
+                            <div class="partners__item">
+                                <img class="partners__img" src="img/partners/2.png" alt="partner">
+
+                                <div class="partners__name">Сервис «Фабрика расчетов»</div>
+                            </div>
+
+                            <div class="partners__item">
+                                <img class="partners__img" src="img/partners/3.png" alt="partner">
+                            </div>
+
+                            <div class="partners__item">
+                                <img class="partners__img" src="img/partners/4.png" alt="partner">
+
+                                <div class="partners__name">IT- решения в области ПБ</div>
+                            </div>
+
+                            <div class="partners__item">
+                                <img class="partners__img" src="img/partners/5.png" alt="partner">
+
+                                <div class="partners__name">Центр Лицензирования «Статус»</div>
+                            </div>
+
+                            <div class="partners__item">
+                                <img class="partners__img" src="img/partners/6.png" alt="partner">
+
+                                <div class="partners__name">Фабрика проектирования СПС, СОУЭ</div>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.partners -->
+
+            <!-- Spec offers -->
+            <section class="spec-offers" id="spec-offers">
+                <div class="container">
+                    <div class="spec-offers__inner" data-aos="fade-up">
+                        <h2 class="spec-offers__title title">СПЕЦПРЕДЛОЖЕНИЯ</h2>
+
+                        <div class="spec-offers__items">
+                            <div class="spec-offers__item">
+                                <p class="spec-offers__text">
+                                    Скидка 50% на все онлайн-курсы в УЦ «Академия Безопасности» до 31.12.2021
+                                </p>
+
+                                <a class="spec-offers__link" href="#">
+                                    Подробнее
+
+                                    <svg class="spec-offers__icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="spec-offers__item">
+                                <p class="spec-offers__text">
+                                    Дарим доступ к ПО по категорированию – программному комплексу «Раскат» на 10 дней
+                                </p>
+
+                                <a class="spec-offers__link" href="#">
+                                    Подробнее
+
+                                    <svg class="spec-offers__icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="spec-offers__item">
+                                <p class="spec-offers__text">
+                                    Скидка 30% на Готовые комплекты по пожарной безопасности в сервисе gotdoc.ru
+                                </p>
+
+                                <a class="spec-offers__link" href="#">
+                                    Подробнее
+
+                                    <svg class="spec-offers__icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="spec-offers__item">
+                                <p class="spec-offers__text">
+                                    Скидка на услуги сервиса:
+                                    Расчет пожарного риска – 10%;
+                                    Определение категории – 15%;
+                                    Изготовление декларации– 20%
+                                </p>
+
+                                <a class="spec-offers__link" href="#">
+                                    Подробнее
+
+                                    <svg class="spec-offers__icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                            <div class="spec-offers__item">
+                                <p class="spec-offers__text">
+                                    Дарим доступ к ПО по категорированию – программному комплексу «Раскат» на 10 дней
+                                </p>
+
+                                <a class="spec-offers__link" href="#">
+                                    Подробнее
+
+                                    <svg class="spec-offers__icon">
+                                        <use xlink:href="#arrow"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.spec-offers -->
+
+            <!-- Serificate -->
+            <section class="sertificate">
+                <div class="container">
+                    <div class="sertificate__inner">
+                        <h2 class="sertificate__title title" data-aos="fade-up">СЕРТИФИКАТ</h2>
+
+                        <p class="sertificate__text" data-aos="fade-up">Каждому участнику конференции будет выдан
+                            сертификат в электронном
+                            виде</p>
+
+                        <img class="sertificate__img" src="img/sertificate/sertificate.jpg" alt="sertificate"
+                            data-aos="fade-up" data-aos-offset="300">
+                    </div>
+                </div> <!-- /.container -->
+            </section> <!-- /.sertificate -->
+
+            <!-- Registration -->
+
+            <section class="registration">
+                <div class="registration__inner" data-aos="fade-up" data-aos-offset="10">
+                    <div class="registration__form">
+                        <h2 class="registration__title title">
+                            РЕГИСТРАЦИЯ НА УЧАСТИЕ В КОНФЕРЕНЦИИ
+                        </h2>
+
+                        <form class="form" action="#">
+                            <input class="form__input" id="fullName" type="text" placeholder="ФИО">
+
+                            <input class="form__input" id="email" type="email" placeholder="EMAIL">
+
+                            <input class="form__btn btn" type="submit">
+                        </form>
+                    </div> <!-- /.registration__form -->
+                </div>
+            </section> <!-- /.registration -->
+        </main>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__nav">
+                        <div class="footer__menu">
+                            <ul class="footer__list">
+                                <li class="footer__item">
+                                    <a class="footer__link anchor" href="#about">О КОНФЕРЕНЦИИ</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link anchor" href="#speakers">СПИКЕРЫ
+                                    </a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link anchor" href="#program">ПРОГРАММА</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link anchor" href="#partners">ПАРТНЕРЫ</a>
+                                </li>
+                                <li class="footer__item">
+                                    <a class="footer__link anchor" href="#spec-offers">СПЕЦПРЕДЛОЖЕНИЯ</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="foooter__btns">
+                            <button class="footer__btn btn-sm popup-link"
+                                data-popup="#registration-popup">Регистрация</button>
+                            <a class="footer__btn btn-sm anchor" href="#speakers">Задать
+                                вопрос</a>
+                        </div>
+                    </div>
+
+                    <div class="footer__connect">
+                        <div class="footer__contacts">
+                            <a class="footer__phone" href="tel:88005503731">
+                                <svg class="footer__icon">
+                                    <use xlink:href="#phone"></use>
+                                </svg>
+
+                                <span>8-800-550-37-31</span>
+                            </a>
+                            <a class="footer__email" href="mailto:info@propb.ru">
+                                <svg class="footer__icon">
+                                    <use xlink:href="#mail"></use>
+                                </svg>
+
+                                <span>info@propb.ru</span>
+                            </a>
+                        </div>
+
+                        <div class="footer__soc">
+                            <a class="footer__soc-link" href="#">
+                                <svg class="footer__soc-icon">
+                                    <use xlink:href="#tg"></use>
+                                </svg>
+                            </a>
+
+                            <a class="footer__soc-link" href="#">
+                                <svg class="footer__soc-icon">
+                                    <use xlink:href="#youtube"></use>
+                                </svg>
+                            </a>
+
+                            <a class="footer__soc-link" href="#">
+                                <svg class="footer__soc-icon">
+                                    <use xlink:href="#vk"></use>
+                                </svg>
+                            </a>
+
+                            <a class="footer__soc-link" href="#">
+                                <svg class="footer__soc-icon">
+                                    <use xlink:href="#dzen"></use>
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer__info">
+                        <div class="footer__copy">
+                            <a class="footer__politic" href="#">Политика конфиденциальности</a>
+                            <span class="footer__copyright">©Все права защищены, 2021</span>
+                        </div>
+
+                        <div class="footer__author">
+                            <span class="footer__author-text">Создание сайта</span>
+                            <img class="footer__author-logo" src="img/footer/logo.png" alt="logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div> <!-- /.wrapper -->
+
+    <!-- Popups -->
+    <div class="popup" id="registration-popup">
+        <div class="popup__body popup-close">
+            <div class="popup__content">
+                <button class="popup__close popup-close">
+                    <span class="popup__close-line">close popup</span>
+                </button>
+
+                <h2 class="popup__title title">
+                    РЕГИСТРАЦИЯ НА УЧАСТИЕ В КОНФЕРЕНЦИИ
+                </h2>
+
+                <form class="form" action="#">
+                    <input class="form__input" id="fullName" type="text" placeholder="ФИО">
+
+                    <input class="form__input" id="email" type="email" placeholder="EMAIL">
+
+                    <input class="form__btn btn" type="submit">
+                </form>
+            </div> <!-- /.registration__form -->
+        </div>
+    </div>
+
+    <div class="popup" id="question-popup">
+        <div class="popup__body popup-close">
+            <div class="popup__content ">
+                <button class="popup__close popup-close">
+                    <span class="popup__close-line">close popup</span>
+                </button>
+
+                <h2 class="popup__title title">
+                    ВОПРОС ДЛЯ ФИО СПИКЕРА
+                </h2>
+
+                <form class="form" action="#">
+                    <input class="form__input" id="email" type="email" placeholder="EMAIL">
+
+                    <textarea class="form__input form__input--textarea" id="question" name="question"
+                        placeholder="ВОПРОС ДЛЯ СПИКЕРА"></textarea>
+
+                    <button class="form__btn btn popup-link" data-popup=#thanks-popup> Отправить </button>
+                </form>
+            </div> <!-- /.registration__form -->
+        </div>
+    </div>
+
+    <div class="popup" id="thanks-popup">
+        <div class="popup__body popup-close">
+            <div class="popup__content">
+                <button class="popup__close popup-close">
+                    <span class="popup__close-line">close popup</span>
+                </button>
+
+                <h2 class="popup__title popup__title--blue title">
+                    СПАСИБО ЗА ВАШ ВОПРОС!
+                </h2>
+
+                <p class="popup__text">Мы передадим его спикеру и он ответит на него на отлайн трансляции</p>
+
+                <button class="btn popup-close">ОК</button>
+
+            </div> <!-- /.registration__form -->
+        </div>
+    </div>
+
+    <div class="popup" id="speaker-popup">
+        <div class="popup__body popup-close">
+            <div class="popup__speaker">
+                <button class="popup__close popup-close">
+                    <span class="popup__close-line">close popup</span>
+                </button>
+
+                <img class="popup__img" src="img/speakers/1.jpg" alt="speaker photo">
+
+                <div class="popup__name">КИРИК ЕКАТЕРИНА</div>
+                <div class="popup__speaker-text">кандидат физико-математических наук; старший научный сотрудник
+                    Института
+                    вычислительного моделирования СО РАН; технический директор компании
+                    «3к-эксперт»; специалист в области компьютерного моделирования пешеходных потоков, решения задач
+                    пожарной безопасности с применением компьютерного моделирования;
+                    ведущий разработчик ПО «Сигма ПБ»; член редакционной коллегии журнала “Collective Dynamics”.</div>
+
+            </div> <!-- /.registration__form -->
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/app.js"></script>
+</body>
+
+</html>
